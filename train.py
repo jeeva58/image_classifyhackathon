@@ -28,8 +28,8 @@ val_set = test_datagen.flow_from_directory('dataset\\val',
                                             class_mode = 'binary')
 
 model.fit_generator(training_set,
-                         steps_per_epoch =2,
-                         epochs = 100,
+                         steps_per_epoch =10,
+                         epochs = 25,
                          validation_data = val_set,
                          validation_steps = 2)
 
